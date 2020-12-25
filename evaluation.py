@@ -95,7 +95,7 @@ class DAVISEvaluation(object):
                 id = frame.split("\\")[-1]
                 temp_mask_id.append(id)
             # all_res_masks = results.read_masks(seq, all_masks_id, separate_objects_masks)
-            # lixu: all_masks_id = > temp_mask_id
+            # lixu: all_masks_id => temp_mask_id
             # #################### lixu ####################
             all_res_masks = results.read_masks(seq, temp_mask_id, separate_objects_masks)
             if self.task == 'unsupervised':
